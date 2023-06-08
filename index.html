@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head title="head">
+    <meta charset="UTF-8" title="meta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" title="meta">
+    <title title="title">HTML Tags Demonstration</title>
+</head>
+
+<body title="body">
+    <style contenteditable style="display: block; white-space: pre;border:1px solid black;">
+        html {
+            background: #BADA55;
+        }
+    </style>
+    <header id="main-header" title="header id=main-header">
+        <h1 title="h1">HTML Tags Demonstration Page</h1>
+        <p title="p">Type your CSS styles in the box above. To select and style a tag, type it straight in as you can
+            see with the html tag above. To style a
+            tag with an ID, use the #key to style it and likewise with a class, use the .class to select it.</p>
+        <p title="p">You can hover over an item to see it's potential selectors.</p>
+        <div title="div .linkContainer" class="linkContainer">
+            <a title="a" href="https://www.w3schools.com/css/default.asp" target="_blank">Link to some good CSS
+                guides</a>
+            <a title="a" href="https://internetingishard.netlify.app/index.html" target="_blank">Link to some good HTML
+                &
+                CSS guides</a>
+            <a title="a" href="https://youtube.com/smoljames" target="_blank">Link to Youtube channel for Web Dev guides.</a>
+        </div>
+    </header>
+
+    <nav id="main-nav" title="nav id=main-nav">
+        <ul title="ul">
+            <li title="li"><a href="#section1" title="a">Try changing the padding & margins!</a></li>
+            <li title="li"><a href="#section2" title="a">Have a fiddle with the font size, letter spacing, text
+                    alignment & colors :o</a></li>
+            <li title="li"><a href="#section3" title="a">Perhaps give this some text shadow and a different background
+                    color.</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" title="main id=main-content">
+
+        <section id="section1" title="section id=section1">
+            <h2 title="h2">Section 1</h2>
+            <article id="article1" title="article id=article1">
+                <h3 title="h3">Article Title</h3>
+                <p title="p">This is a paragraph inside an article. The article tag specifies independent,
+                    self-contained content. Perhaps you could give this section a border and a box shadow, and reduce
+                    the opacity.</p>
+                <figure title="figure">
+                    <img src="https://tinyurl.com/37nfb2ts" alt="Example Image" title="img">
+                    <figcaption title="figcaption">This is a caption for the image. Try changing the object fit style to
+                        cover, and reducing the width or max width properties.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="section2" title="section id=section2">
+            <h2 title="h2">Section 2</h2>
+            <p title="p">This section contains a list:</p>
+            <ul title="ul">
+                <li title="li">Item 1 - change the position to fixed or absolute or relative.</li>
+                <li title="li">Item 2 - then try changing the display of the unordered list to grid or flex.</li>
+                <li title="li">Item 3 - finally have a go at using the flex direction, align items, justify content and
+                    grid-template-columns parameters to change the displays.</li>
+            </ul>
+            <p title="p">And an ordered list:</p>
+            <ol title="ol">
+                <li title="li">First item</li>
+                <li title="li">Second item</li>
+                <li title="li">Third item</li>
+            </ol>
+        </section>
+
+        <section id="section3" title="section id=section3">
+            <h2 title="h2">Section 3</h2>
+            <table title="table">
+                <caption title="caption">Sample Table - try changing the text decoration, font weight & font style of
+                    the head of the table.</caption>
+                <thead title="thead">
+                    <tr title="tr">
+                        <th title="th">Header 1</th>
+                        <th title="th">Header 2</th>
+                    </tr>
+                </thead>
+                <tbody title="tbody">
+                    <tr title="tr">
+                        <td title="td">Row 1, Cell 1</td>
+                        <td title="td">Row 1, Cell 2</td>
+                    </tr>
+                    <tr title="tr">
+                        <td title="td">Row 2, Cell 1</td>
+                        <td title="td">Row 2, Cell 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section title="section">
+            <h2 title="h2">Form Example</h2>
+            <form action="/submit" method="post" title="form">
+                <label for="name" title="label">Name:</label>
+                <input type="text" id="name" name="name" title="input type=text id=name"><br>
+                <button type="submit" title="button type=submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <aside id="sidebar" title="aside id=sidebar">
+        <h3 title="h3">Sidebar</h3>
+        <p title="p">This is a sidebar, which can contain additional information, links, or other content that is
+            tangentially related to the content of the page.</p>
+    </aside>
+
+    <footer id="main-footer" title="footer id=main-footer">
+        <p title="p">Copyright &copy; 2023 HTML Tags Demonstration Page</p>
+    </footer>
+
+    <script>
+        document.onkeydown = function onkeydown(e) {
+            if (e.keyCode == 13 && e.shiftKey == false) {
+                e.preventDefault();
+                document.execCommand("insertLineBreak");
+            }
+        }
+    </script>
+</body>
+
+</html>
